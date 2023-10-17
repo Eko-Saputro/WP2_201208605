@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title></title>
   </head>
-  <?php echo validation_errors(); ?>
   <body>
+    
 
     <center>
       <form action="<?= base_url('matakuliah/cetak'); ?>" method="post">
@@ -24,15 +24,17 @@
                    <th>Kode MTK</th>
                    <td>:</td>
                    <td>
-                       <input type="text" name="kode" id="kode">
+                       <input type="text" name="kode" id="kode" value="<?php echo set_value('kode'); ?>">
                    </td>
+                   <td><?php echo form_error('kode'); ?></td>
                </tr>
                <tr>
                    <th>Nama MTK</th>
                    <td>:</td>
                    <td>
-                       <input type="text" name="nama" id="nama" >
+                       <input type="text" name="nama" id="nama" value="<?php echo set_value('nama'); ?>">
                    </td>
+                   <td><?php echo form_error('nama'); ?></td>
                </tr>
                <tr>
                    <th>SKS</th>
@@ -45,6 +47,7 @@
                            <option value="4">4</option>
                        </select>
                    </td>
+                   <td><?php echo form_error('sks'); ?></td>
                </tr>
                <tr>
                    <td colspan="3" align="center">
