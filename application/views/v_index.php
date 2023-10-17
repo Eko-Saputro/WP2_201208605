@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Web Prog II | Merancang Template sederhana dengan codeigniter</title>
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/stylebuku.css">
-  </head>
-  <body>
-    <div id="wrapper">
-  		<header>
-  			<hgroup>
-  				<h1>RentalBuku.net</h1>
-  				<h3>Membuat Template Sederhana dengan CodeIgniter</h3>
-  			</hgroup>
-  			<nav>
-  				<ul>
-  					<li><a href="<?php echo base_url() . 'web' ?>">Home</a></li>
-  					<li><a href="<?php echo base_url() . 'web/about' ?>">About</a></li>
-  				</ul>
-  			</nav>
-  			<div class="clear"></div>
-  		</header>
+
 
 <!--index-->
 <section>
@@ -37,10 +16,3 @@
 <p align='justify'>Controller merupakan kumpulan intruksi aksi yang menghubungkan model dan view, jadi user tidak akan berhubungan dengan model secara langsung, intinya data yang tersimpan di database (model) di ambil oleh controller dan kemudian controller pula yang menampilkan nya ke view. Jadi controller lah yang mengolah intruksi.</p>
 <p align='justify'>Dari penjelasan tentang model view dan controller di atas dapat di simpulkan bahwa controller sebagai penghubung view dan model. misalnya pada aplikasi yang menampilkan data dengan menggunakan metode konsep mvc, controller memanggil intruksi pada model yang mengambil data pada database, kemudian controller yang meneruskannya pada view untuk di tampilkan. jadi jelas sudah dan sangat mudah dalam pengembangan aplikasi dengan cara mvc ini karena web designer atau front-end developer tidak perlu lagi berhubungan dengan controller, dia hanya perlu berhubungan dengan view untuk mendesign tampilann aplikasi, karena back-end developer yang menangani bagian controller dan modelnya. Jadi pembagian tugas pun menjadi mudah dan pengembangan aplikasi dapat di lakukan dengan cepat dan terstruktur.</p>
 </section>
-<!--footer-->
-      <footer>
-  			<a href="http://www.RentalBuku.com">RentalBuku</a>
-  		</footer>
-  	</div>
-  </body>
-</html>
